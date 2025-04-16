@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Amazon Account</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 350px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .form-container img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .info {
+      font-size: 0.8em;
+      color: #555;
+      text-align: left;
+    }
+
+    button {
+      width: 100%;
+      background-color: #ffcc00;
+      color: black;
+      padding: 15px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.9em;
+    }
+
+    .links a {
+      color: #0066c0;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+  .footer {
+      margin-top: 20px;
+      text-align: left;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+    <h2>Create account</h2>
+    <form>
+      <label for="name">Your name</label>
+      <input type="text" id="name" name="name" placeholder="First and last name" required />
+
+      <label for="email">Mobile number or email</label>
+      <input type="text" id="email" name="email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="At least 6 character"minlength="6" required />
+      <p class="info">Passwords must be at least 6 characters.</p>
+
+      <label for="re-password">Re-enter password</label>
+      <input type="password" id="re-password" name="re-password" required />
+
+      <button type="submit">Continue</button>
+    </form>
+
+   <div class="info">
+      By creating an account, you agree to Amazon's 
+      <a href="#">Conditions of Use</a> and 
+      <a href="#">Privacy Notice</a>.
+    </div>
+    <div class="footer">
+    Already have an account? <a href="#">Sign in</a><br>
+    Buying for work? <a href="#">Create a free business account</a>
+    </div>
+  </div>
+</body>
+</html>
